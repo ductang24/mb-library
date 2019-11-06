@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,700&display=swap&subset=japanese');
+
+body {
+  overflow-x: hidden;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 6rem;
+  margin-top: -6rem;
+}
+
+/*--- Navigation ---*/
+.navbar {
+  font-weight: 400;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-brand {
+  margin-left: 50px;
+  padding: 5px;
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 4px solid white;
+}
+.navbar-nav li {
+  text-transform: uppercase;
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--typo-one);
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--typo-three);
+}
+
+.navbar-form .btn {
+  margin-left: 5px;
+  padding: 5px 15px;
+}
+
+/*--- Landing Page ---*/
+
+.home-inner {
+  background: url(img/library.jpg);
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  text-transform: uppercase;
+  color: var(--typo-one);
+}
+.caption h1 {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem rgba(0, 0, 0, 0.6);
+}
+.caption h3 {
+  font-size: 1.5rem;
+  text-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.6);
+  padding-bottom: 1.6rem;
+}
+
+
+/*--- Course Section --*/
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.4rem;
+}
+
+#course blockquote hr.quote {
+  margin-top: 1.5rem;
+  width: 50%;
+}
+#course blockquote cite {
+  font-size: 1.2rem;
+}
+
+/*--- Services Section --*/
+.jumbotron {
+  margin-bottom: 0%;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0%;
+}
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: var(--mater-two);
+  margin: 0 auto 2rem;
+}
+.service svg.svg-inline--fa {
+  color: var(--mater-two);
+}
+.service h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.service p {
+  font-size: 1.1rem;
+}
+
+/*--- Resources Section --*/
+.fixed {
+  background-image: url(img/product.jpg);
+  z-index: -1;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 7rem 2rem;
+}
+.fixed-background h3 {
+  margin-bottom: 2rem;
+}
+.fixed-background p {
+  margin-top: 1.5rem;
+}
+.fixed-background .col-md-6 {
+  padding: 0 5rem;
+}
+
+/*--- Instructor Section --*/
+.instructor img {
+  width: 100%;
+  border-radius: 50%;
+}
+blockquote svg.svg-inline--fa {
+  color: #1e9adf;
+  margin: 1rem;
+}
+blockquote .instructor-hr {
+  border-top: .05rem solid #1e9adf;
+}
+
+/*--- Contact Section --*/
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+footer h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 0 .5rem;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1e9adf!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+/*--- Media Queries --*/
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .navbar h3 {
+    font-size: 1.3rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  .instructor img {
+    max-width: 50%;
+    display: block;
+    margin: auto;
+  }
+}
