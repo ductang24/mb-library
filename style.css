@@ -185,8 +185,12 @@ hr.socket {
 
 /*--- Media Queries --*/
 @media (max-width: 767px) {
-  .caption h1 {
+  .caption {
+    padding: 0 20px;
+  }
+  .caption h2 {
     font-size: 2.3rem;
+    font-weight: 700;
     letter-spacing: .15rem;
     padding-bottom: .5rem;
   }
